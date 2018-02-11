@@ -1,0 +1,179 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+
+    <div class="main-container container-fluid">
+
+
+          <!-- FORMULARIO-->
+          <div class="row form-container">
+            <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbzDIjiZatPrWzO2Joov9z7EYIgeJGuK0l3_td3lMMVjedP_OgmD/exec" class="col s8 ls-form">
+              <h2>Formulario de Ventas</h2>
+
+              
+              <div class="row sl-datos-atencion">
+                <h5>Datos de atención</h5>
+
+                <div class="input-field col s12">
+                  <p class="ls-form-label">Atendió</p>
+                   <input name="atendio" id="sellerInit" class="chips chips-autocomplete"></input>
+                </div>
+
+                <div class="col s12">
+                  <p class="ls-form-label">Es un cliente frecuente?</p>
+                    <div class="switch">
+                      <label>
+                        NO
+                        <input type="checkbox" name="cliente-frecuente">
+                        <span class="lever"></span>
+                        SI 
+                      </label>
+                    </div>
+                </div>
+
+                <div class="input-field col s12">
+                  <p class="ls-form-label">Ingresa el nombre del Cliente</p>
+                   <input name="nombre-cliente" id="first_name" type="text" class="validate"> 
+                 </div>
+
+                 <div class="input-field col s12">
+                  <p class="ls-form-label">Ingresa el correo del Cliente</p>
+                   <input name="correo-cliente" id="email" type="email" class="validate">
+                 </div>
+
+              </div>
+
+
+              <br>
+              <br>
+              <br>
+
+              <div class="sl-detalle-venta">
+                <h5>Detalles de venta</h5>
+
+
+                <!-- ROW -->
+  
+                <div class="row row-service row-service1">
+
+                    <div class="input-field col m4 category category-1">
+                      <select name="categoria">
+                        <option value="" disabled selected>Elige una categoría</option>
+                        <option value="1">Corte</option>
+                        <option value="2">Tintura</option>
+                        <option value="3">Depilación</option>
+                      </select>
+                      <label>Categoría</label>
+                    </div>
+
+                    <div class="input-field col m6 service service-1">
+                      <select name="servicio">
+                        <option value="" disabled selected>Elige un servicio</option>
+                        <option value="1">Corte Hombre</option>
+                        <option value="2">Degradado Hombre</option>
+                        <option value="3">Corte mujer</option>
+                      </select>
+                      <label>Categoría</label>
+                    </div>
+
+                    <div class="input-field col m2 subtotal-1">
+                      <input name="subtotal" id="subtotal" type="text" class="validate ">
+                      <label for="subtotal">Subtotal</label>
+                    </div>
+
+                </div>
+
+
+                <!-- END ROW -->
+
+
+                <button id="add-service" class="waves-effect waves-light btn">Agregar Servicio</button>
+                <button id="remove-service" class="waves-effect waves-light btn disabled">Quitar</button>
+
+
+                <div class="row total-amount">
+                  <div class="col m4">
+                      <input name="total"id="total" type="text" class="validate ">
+                      <label for="total">Total</label>
+                  </div>
+                </div>
+
+
+                <div class="row payment">
+
+                  <div class="col m6">
+                    <p class="ls-form-label">Medio de Pago</p>
+                    <select name="medio-de-pago">
+                        <option value="" disabled selected>Selecciona un medio de pago</option>
+                        <option value="1">Corte Hombre</option>
+                        <option value="2">Degradado Hombre</option>
+                        <option value="3">Corte mujer</option>
+                      </select>
+                  </div>
+
+                  <div class="col m6 payment-data">
+                    <h6>Datos del Pago</h6>
+
+                    <input name="folio" id="folio" type="text" class="validate ">
+                    <label for="folio">Ingresa el folio de la boleta o voucher de transbank.</label>
+                      
+
+
+                  </div>
+
+                </div>
+
+                <button id="add-service" class="waves-effect waves-light btn">Pagar!</button>
+
+
+
+
+        
+              </div>
+
+                  
+
+              </div>
+            </form>
+          </div>
+          
+        </section>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+       <!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+      <script src="js/main.js"></script>
+      <script data-cfasync="false" type="text/javascript"
+  src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+    </body>
+  </html>

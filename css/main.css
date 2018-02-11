@@ -1,0 +1,13 @@
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 70% !important; }
+  .form-container .ls-form {
+    margin: 3em auto auto 5em;
+    height: 250vh; }
+  .form-container .total-amount {
+    display: flex;
+    justify-content: flex-end; }
+
+/*# sourceMappingURL=main.css.map */
